@@ -7,6 +7,7 @@
 }
 
 :root{
+    --azul-highlight: #A2CFF8;
     --azul-claro: #1091FA;
     --azul-medio: #22669F;
     --azul-escuro: #003366;
@@ -16,13 +17,13 @@
 }
 
 h1{
-    font-size: 3rem;
+    font-size: 6rem;
 }
 h2{
-    font-size: 2rem;
+    font-size: 3rem;
 }
 h3{
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 h4{
     font-size: 1.25rem;
@@ -44,16 +45,13 @@ header{
     align-items: center;
     padding-left: 2.375rem;
 
-    nav{
-        a{
-            padding: 2.375rem;
-            img{
-                width: 4.188rem;
-                height: 4rem;
-            }
+    nav>a{
+        padding: 2.375rem;
+        img{
+            width: 4.188rem;
+            height: 4rem;
         }
     }
-
 }
 
 header * {

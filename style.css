@@ -1,20 +1,48 @@
 @import "global.css";
 
-:root{
-    --azul-claro: #1091FA;
-    --azul-medio: #22669F;
-    --azul-escuro: #003366;
-    --azul-quase-preto: #000923;
-    --branco: #FFFDFA;
-}
-
 body{
     background: #000923;
     background: linear-gradient(180deg, rgba(0, 9, 35, 1) 60%, rgba(0, 0, 0, 1) 100%);
     color: var(--branco);
+
+    .inicio{
+        background: url("assets/home.svg") no-repeat;
+        background-size: cover;
+    }
 }
 
 a{
     text-decoration: none;
     color: var(--branco);
+}
+
+main{
+    .bem-vindo{
+        div{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            h1{
+                margin-top: 12.5rem;
+                margin-bottom: 6.25rem;
+            }
+            h4{
+                margin-bottom: 3.5rem;
+                width: 26.875rem;
+                text-align: center;
+            }
+            button{
+                width: 35rem;
+                height: 5rem;
+                margin-bottom: 2.5rem;
+                background: var(--azul-highlight);
+                border: none;
+                box-shadow: 0 0 10px var(--azul-highlight), 0 0 20px #fff;
+            }
+            a{
+                margin-bottom: 12.5rem;
+                font-size: 2rem;
+            }
+        }
+    }
 }
