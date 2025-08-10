@@ -47,11 +47,27 @@ header{
     align-items: center;
     padding-left: 2.375rem;
 
-    nav>a{
-        padding: 2.375rem;
-        img{
-            width: 4.188rem;
-            height: 4rem;
+    nav{
+        display: flex;
+        align-items: center;
+        
+        a{
+            text-decoration: none;
+            color: var(--branco);
+            font-size: 1.25rem;
+            font-family: "Poppins", serif;
+            font-weight: bold;
+            padding: 2.375rem;
+            img{
+                width: 4.188rem;
+                height: 4rem;
+            }
+        }
+        a:hover,
+        a:focus{
+            transition-duration: 0.3s;
+            color: var(--azul-claro);
+            text-decoration: underline;
         }
     }
 }
