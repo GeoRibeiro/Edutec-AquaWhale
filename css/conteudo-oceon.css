@@ -1,9 +1,13 @@
 @import "./global.css";
 
 body{
-    background: url('/assets/bg-oceano.svg') no-repeat;
-        background-size: cover;
-        
+        .inicio{
+
+            background: url("/assets/bg-oceano.svg") no-repeat;
+            background-size: cover;
+
+
+        }    
 }
 
 
@@ -16,6 +20,74 @@ body{
     --branco: #FFFDFA;
     --preto: #000 ;
 }
+
+
+
+.pag2 {
+
+    
+    background-color: #01012A;
+}
+
+
+.pag3{
+
+    background-color: #000014;
+
+}
+
+
+.pag4{
+
+background-color: #000000;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+button {
+
+    gap: 15rem; /*espaços entre os botões*/
+    justify-content: center; /*centralizar na horizontal*/
+    margin-top: 50px; /*espaço em cima*/
+    color: var(--branco);
+    background-color: #0009236e;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column; /*procurar sobre*/
+    justify-content: center; /*procurar sobre*/
+    align-items: center;
+    padding-top: 50;
+    width: 10rem;
+    height: 10rem;
+    
+    
+}  
+
+
+
+
+
+
 
 h1{
     color: var(--branco);
@@ -40,29 +112,7 @@ h4 {
     
 }
 
-button {
-    gap: 15rem; /*espaços entre os botões*/
-    justify-content: center; /*centralizar na horizontal*/
-    margin-top: 50px; /*espaço em cima*/
-    color: var(--branco);
-    background-color: #0009236e;
-    border-radius: 0.5rem;
-    display: flex;
-    flex-direction: column; /*procurar sobre*/
-    justify-content: center; /*procurar sobre*/
-    align-items: center;
-    padding-top: 50;
-    width: 10rem;
-    height: 10rem;
-    
-    
-}
 
-
-button:hover {
-  background-color: var(--azul-medio);
-  color: white;
-}
 
 header{
     border-bottom: 1px solid var(--preto);

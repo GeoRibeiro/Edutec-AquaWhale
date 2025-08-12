@@ -72,9 +72,6 @@ main{
     border-radius: 1.563rem;
 }
 
-.titulo-section{
-    display: flex;
-}
 
 .sections{
     display: flex;
@@ -93,7 +90,6 @@ main{
 
 .explorar p{
     text-align: center;
-    margin-bottom: 1.188rem;
 }
 
 .sections button{
@@ -109,17 +105,6 @@ main{
     font-size: 1.25rem;
     font-family: "Poppins", serif;
     font-weight: bold;
-}
-
-.botao{
-    display: flex;
-    justify-content: space-between;
-}
-
-.quiz-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 button{
