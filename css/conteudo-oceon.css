@@ -1,14 +1,17 @@
 @import "./global.css";
 
 body{
+    background: #000923;
+    background: linear-gradient(180deg, rgba(0, 9, 35, 1) 60%, rgba(0, 0, 0, 1) 100%); /*para colocar gradiente*/
+    color: var(--branco);
         .inicio{
-
-            background: url("/assets/bg-oceano.svg") no-repeat;
+            background: url("/assets/cont-imagens/oceano-img/bg-oceano.svg") no-repeat;
             background-size: cover;
-
-
         }    
 }
+
+
+
 
 
 :root{
@@ -23,33 +26,13 @@ body{
 
 
 
-.pag2 {
+.pt1-home{
 
-    
-    background-color: #01012A;
-}
-
-
-.pag3{
-
-    background-color: #000014;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50;
 
 }
-
-
-.pag4{
-
-background-color: #000000;
-
-}
-
-
-
-
-
-
-
-
 
 
 

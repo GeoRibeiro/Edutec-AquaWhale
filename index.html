@@ -20,9 +20,9 @@
     <header>
         <nav>
             <a href="./index.html"><img src="./assets/logo-site.svg" alt="Logo do site AquaWhale"></a>
-            <a href="./html/conteudos/conteudo-oceon.html">Explore os conteúdos</a>
-            <a href="./html/conteudos/conteudo-algasEPlânctons.html">Quiz</a>
-            <a href="./html/conteudos/conteudo-recifeDeCorais.html">ONGs</a>
+            <a href="./html/conteudos/nav-conteudos/nav-conteudos.html">Explore os conteúdos</a>
+            <a href="./html/Quiz.html">Quiz</a>
+            <a href="./html/ONG's.html">ONGs</a>
             <a href="#">Sobre Nós</a>
         </nav>
     </header>
@@ -36,7 +36,7 @@
 
             <div>
                 <button><a href="#">Começar exploração</a></button>
-                <a href="#"><img src="/assets/bola-scroll.svg" alt="Imagem de uma bolinha para scrol"></a>
+                <a href="#"><img src="/assets/bola-scroll.png" alt="Imagem de uma bolinha para scrol"></a>
             </div>
             <div id="blur"></div>
         </div>
@@ -45,7 +45,7 @@
         <div class="explorar">
             <h2>Explore nosso site</h2>
             <div class="sections">
-                <section id="especies-section">
+                <section class="cards">
                         <div>
                             <i class="ph ph-globe"></i>
                             <h4>Explorar as espécies em 3D</h4>
@@ -55,7 +55,7 @@
                 </section>
 
 
-                <section id="conteudos-section">
+                <section class="cards">
                         <div>
                             <i class="ph ph-bookmark-simple"></i>
                             <h4>Conteúdos para explorar</h4>
@@ -64,7 +64,7 @@
                     <div class="botao"><button><a href="#">Clique aqui</a></button></div>
                 </section>
 
-                <section id="quiz-section">
+                <section class="cards">
                         <div class="titulo-section">
                             <i class="ph ph-puzzle-piece"></i>
                             <h4>Teste seu conhecimento</h4>
@@ -84,62 +84,64 @@
         </div>
 
         <div class="sobre-nos">
-            <h2>Nosso time</h2>
-            <p>São os criadores deste site, conheça e acompanhe eles em suas redes sociais!</p>
-
-            <section>
-                <h2>Geovanna</h2>
-                <img src="" alt="Imagem da pessoa">
-                <p>16 anos, sonha em ser arquiteta, ama artes cênicas e artes visuais, junto com games e livros. Está no T.I atualmente.</p>
-                <a href="#"><i class="ph ph-instagram-logo"></i></a>
-                <a href="#"><img src="" alt="Rede social"></a>
-                <a href="#"><img src="" alt="Rede social"></a>
-            </section>
-
-            <section>
-                <h2>Lucca</h2>
-                <img src="" alt="Imagem da pessoa">
-                <p>Meu nome é Lucca, tenho 17 anos e sonho ingressar na carreira do Ti.</p>
-                <a href="#"><img src="" alt="Insta"></a>
-                <a href="#"><img src="" alt="Rede social"></a>
-                <a href="#"><img src="" alt="Rede social"></a>
-            </section>
-
-            <section>
-                <h2>Matheus</h2>
-                <img src="" alt="Imagem da pessoa">
-                <p>Meu nome é Matheus, tenho 15 anos e sonho em futuramente trabalhar em alguma área do TI</p>
-                <a href="#"><img src="" alt="Insta"></a>
-                <a href="#"><img src="" alt="Rede social"></a>
-                <a href="#"><img src="" alt="Rede social"></a>
-            </section>
-
-            <section>
-                <h2>Paula</h2>
-                <img src="" alt="Imagem da pessoa">
-                <p>16 anos, uma jovem que sonha em fazer a área de moda e joias e não pretende seguir a área do TI.</p>
-                <a href="#"><img src="" alt="Insta"></a>
-                <a href="#"><img src="" alt="Rede social"></a>
-                <a href="#"><img src="" alt="Rede social"></a>
-            </section>
-
-            <section>
-                <h2>Gabrielly</h2>
-                <img src="" alt="Imagem da pessoa">
-                <p>Tenho 16 anos e sonho em ser designer de interiores e designer de sites. Atualmente estou cursando o ensino técnico.</p>
-                <a href="#"><i class="ph ph-instagram-logo"></i></a>
-                <a href="#"><img src="" alt="Rede social"></a>
-                <a href="#"><img src="" alt="Rede social"></a>
-            </section>
-            
-            <section>
-                <h2>Sarah</h2>
-                <img src="" alt="Imagem da pessoa">
-                <p>Meu nome é Sarah tenho 17 anos, filha de enfermeira e ainda não sei o que vou seguir.</p>
-                <a href="#"><img src="" alt="Insta"></a>
-                <a href="#"><img src="" alt="Rede social"></a>
-                <a href="#"><img src="" alt="Rede social"></a>
-            </section>
+            <div>
+                <h2>Nosso time</h2>
+                <p>São os criadores deste site, conheça e acompanhe eles em suas redes sociais!</p>
+            </div>
+            <div class="section-nos">
+                <section>
+                    <h3>Geovanna</h3>
+                    <img src="/assets/sobre-nos/geo.svg" alt="Imagem da Geovanna" class="fotos-pessoas">
+                    <p>16 anos, sonha em ser arquiteta, ama artes cênicas e artes visuais, junto com games e livros. Está no T.I atualmente.</p>
+                    <a href="#"><i class="ph ph-instagram-logo"></i></a>
+                    <a href="#"><i class="ph ph-x-logo"></i></a>
+                    <a href="#"><i class="ph ph-tiktok-logo"></i></a>
+                </section>
+    
+                <section>
+                    <h3>Lucca</h3>
+                    <img src="/assets/sobre-nos/lucca.svg" alt="Imagem do Lucca">
+                    <p>Meu nome é Lucca, tenho 17 anos e sonho ingressar na carreira do Ti.</p>
+                    <a href="#"><img src="" alt="Insta"></a>
+                    <a href="#"><img src="" alt="Rede social"></a>
+                    <a href="#"><img src="" alt="Rede social"></a>
+                </section>
+    
+                <section>
+                    <h3>Matheus</h3>
+                    <img src="/assets/sobre-nos/matheus.svg" alt="Imagem do Matheus">
+                    <p>Meu nome é Matheus, tenho 15 anos e sonho em futuramente trabalhar em alguma área do TI</p>
+                    <a href="#"><img src="" alt="Insta"></a>
+                    <a href="#"><img src="" alt="Rede social"></a>
+                    <a href="#"><img src="" alt="Rede social"></a>
+                </section>
+    
+                <section>
+                    <h3>Paula</h3>
+                    <img src="/assets/sobre-nos/paula.svg" alt="Imagem da Paula">
+                    <p>16 anos, uma jovem que sonha em fazer a área de moda e joias e não pretende seguir a área do TI.</p>
+                    <a href="#"><i class="ph ph-instagram-logo"></i></a>
+                    <a href="#"><i class="ph ph-tiktok-logo"></i></a>
+                </section>
+    
+                <section>
+                    <h3>Gabrielly</h3>
+                    <img src="/assets/sobre-nos/gabby.svg" alt="Imagem da Gabrielly">
+                    <p>Tenho 16 anos e sonho em ser designer de interiores e designer de sites. Atualmente estou cursando o ensino técnico.</p>
+                    <a href="#"><i class="ph ph-instagram-logo"></i></a>
+                    <a href="#"><i class="ph ph-tiktok-logo"></i></a>
+                    <a href="#"><i class="ph ph-discord-logo"></i></a>
+                </section>
+                
+                <section>
+                    <h3>Sarah</h3>
+                    <img src="/assets/sobre-nos/sarah.svg" alt="Imagem da Sarah">
+                    <p>Meu nome é Sarah tenho 17 anos, filha de enfermeira e ainda não sei o que vou seguir.</p>
+                    <a href="#"><i class="ph ph-instagram-logo"></i></a>
+                    <a href="#"><img src="" alt="Rede social"></a>
+                    <a href="#"><img src="" alt="Rede social"></a>
+                </section>
+            </div>
         </div>
         <button><a href="#"><img src="" alt="Seta"></a></button>
 

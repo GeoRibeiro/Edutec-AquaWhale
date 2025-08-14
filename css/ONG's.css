@@ -1,0 +1,83 @@
+@import "./global.css";
+
+:root{
+    branco: #ffffff;
+    preto: #000000;
+    azul-claro: #A2CFF8;
+    preto-roxo: #000026;
+    meio-preto: #000923;
+}
+
+h1{
+font-size: 6rem;
+
+}
+
+h2{
+font-size: 3rem;
+}
+
+p{
+    font-size: 1rem;
+    font-family: "Poppins", serif;
+}
+
+header * {
+    background: transparent;
+}
+
+border-radius{
+.oceana{
+
+
+    .sections button{
+        height: 2.938rem;
+        width: 16.563rem;
+        background: var(--azul-claro);
+        box-shadow: 5px 5px 25px -2px var(--azul-claro), inset 100px 0px 50px #000923;
+        border-radius: 1.313rem;
+        border: none;
+    }
+}
+
+.euapoio{
+
+
+
+    .sections button{
+        height: 2.938rem;
+        width: 16.563rem;
+        background: var(--azul-claro);
+        box-shadow: 5px 5px 25px -2px var(--azul-claro), inset 100px 0px 50px #000923;
+        border-radius: 1.313rem;
+        border: none;
+    }
+}
+
+.greenpeace{
+
+    .sections button{
+        height: 2.938rem;
+        width: 16.563rem;
+        background: var(--azul-claro);
+        box-shadow: 5px 5px 25px -2px var(--azul-claro), inset 100px 0px 50px #000923;
+        border-radius: 1.313rem;
+        border: none;
+    }
+
+}
+
+.wwf{
+
+
+    .sections button{
+        height: 2.938rem;
+        width: 16.563rem;
+        background: var(--azul-claro);
+        box-shadow: 5px 5px 25px -2px var(--azul-claro), inset 100px 0px 50px #000923;
+        border-radius: 1.313rem;
+        border: none;
+    }
+
+}
+}
