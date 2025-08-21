@@ -1,0 +1,57 @@
+@import "./global.css";
+
+body{
+    background: #000923;
+    background: linear-gradient(180deg, rgba(0, 9, 35, 1) 60%, rgba(0, 0, 0, 1) 100%); /*para colocar gradiente*/
+    color: var(--branco);
+        .inicio{
+            background: url("/assets/cont-imagens/oceano-img/bg-oceano.svg") no-repeat;
+            background-size: cover;
+        }    
+}
+
+.pt1-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50;
+}
+
+/*
+button {
+
+    gap: 15rem; espaços entre os botões
+    justify-content: center; centralizar na horizontal
+    margin-top: 50px; espaço em cima
+    color: var(--branco);
+    background-color: #0009236e;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column; procurar sobre
+    justify-content: center; procurar sobre
+    align-items: center;
+    padding-top: 50;
+    width: 10rem;
+    height: 10rem;    
+}
+*/
+
+
+h1{
+    color: var(--branco);
+    display: flex;
+    flex-direction: column; /*procurar sobre*/
+    justify-content: center; /*procurar sobre*/
+    align-items: center;
+    padding-top: 50;
+}
+
+h4 {
+    color:var(--branco);
+    display: flex;
+    flex-direction: column; /*procurar sobre*/
+    justify-content: center; /*procurar sobre*/
+    align-items: center;
+    padding-top: 50;
+}
