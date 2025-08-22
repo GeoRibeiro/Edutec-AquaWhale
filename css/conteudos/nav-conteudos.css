@@ -1,1 +1,49 @@
 @import "./global.css";
+
+body{
+    background: url("/assets/cont-imagens/oceano-img/bg-oceano.svg") no-repeat;
+    background-size: cover;
+    color: var(--branco);
+    text-align: center;
+    height: 100vh;
+
+    h2{
+        margin-top: 0.938rem;
+        text-shadow: 5px 5px 10.9px var(--azul-claro);
+    }
+}
+
+
+.navegacao-cont{
+    margin: 22.813rem 0 3.063rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 3.563rem;
+    .desc{
+        max-width: 26.375rem;
+        text-align: left;
+        padding-left: 1.063rem;
+        border-left: 0.125rem solid #0A3365;
+        p{
+            margin-top: 0.125rem;
+        }
+        button{
+            border: none;
+            background: var(--azul-highlight);
+            box-shadow: 2px 0px 24.7px -1px #1091FA;
+            color: var(--branco);
+            text-align: center;
+            font-size: 1.75rem;
+            width: 3.313rem;
+            height: 2.875rem;
+            margin-bottom: 1.5rem;
+        }
+        a{
+            text-shadow: 1px 1px 6.8px #A2CFF8;
+            text-decoration: none;
+            color: var(--branco);
+            font-size: 1.25rem;
+            line-height: 1.875rem;
+        }
+    }
+}
