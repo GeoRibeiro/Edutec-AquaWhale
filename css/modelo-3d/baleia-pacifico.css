@@ -1,0 +1,10 @@
+@import "/css/global.css";
+
+body{
+    background: linear-gradient(180deg, #000923 75.48%, #000000 96%);
+    color: var(--branco);
+    .inicio{
+        background: url("/assets/modelo 3d/baleia/bg-baleia.svg") no-repeat;
+        background-size: cover;
+    }
+}

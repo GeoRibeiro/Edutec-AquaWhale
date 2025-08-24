@@ -1,4 +1,4 @@
-@import "./global.css";
+@import "/css/global.css";
 
 body{
     background: url("/assets/cont-imagens/oceano-img/bg-oceano.svg") no-repeat;
