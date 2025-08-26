@@ -1,6 +1,23 @@
-@import "./global.css";
+@import "/css/global.css";
+
 
 body{
     background: #000923;
-   
+    background: linear-gradient(180deg, rgba(0, 9, 35, 1) 60%, rgba(0, 0, 0, 1) 100%); /*para colocar gradiente*/
+    color: var(--branco);
+        .home-peixepaci{
+            background: url("/assets/modelo\ 3d/palhaco/peixe-bg.svg") no-repeat;
+            background-size: cover;
+            height: 110vh;
+        }    
+}
+
+
+
+
+
+.home-peixepaci h1{
+
+
+    padding: 20px;
 }

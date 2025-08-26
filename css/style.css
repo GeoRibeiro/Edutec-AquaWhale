@@ -31,7 +31,7 @@ main{
 
     .bem-vindo{
         #blur{
-            box-shadow: 0px 400px 100px 550px #000923;
+            box-shadow: 0 25rem 6.25rem 34.375rem #000923;
         }
         div{
             display: flex;
@@ -52,7 +52,7 @@ main{
                 margin-bottom: 2.5rem;
                 background: var(--azul-highlight);
                 border: none;
-                box-shadow: 0 0 10px var(--azul-highlight), 0 0 20px #fff;
+                box-shadow: 0 0 0.625rem var(--azul-highlight), 0 0 1.25rem #fff;
             }
             button:hover{
                 background: var(--azul-medio);
@@ -67,7 +67,7 @@ main{
 }
 
 .explorar h2 {
-    text-shadow: 5px 5px 10.9px var(--azul-claro);
+    text-shadow: 0.313rem 0.313rem 0.681rem var(--azul-claro);
     margin-bottom: 4rem;
     text-align: center;
 }
@@ -116,7 +116,7 @@ main{
     height: 2.938rem;
     width: 16.563rem;
     background: var(--azul-claro);
-    box-shadow: 5px 5px 25px -2px var(--azul-claro), inset 100px 0px 50px #000923;
+    box-shadow: 0.313rem 0.313rem 1.563rem -0.125rem var(--azul-claro), inset 100px 0px 50px #000923;
     border-radius: 1.313rem;
     color: var(--branco);
     font-size: 1.25rem;
@@ -128,10 +128,10 @@ main{
 .botao button:hover {
     cursor: pointer;
     transition: .4s ease-in-out;
-    background: #4F95DA;
+    background: var(--azul-claro);
     box-shadow: none;
     transform: scale(1.03);
-    box-shadow: 0 0 10px var(--azul-highlight), 0 0 20px #fff;
+    box-shadow: 0 0 0.625rem var(--azul-claro), 0 0 1.25rem #fff;
 }
 
 .explorar a{
@@ -147,7 +147,7 @@ main{
     div{
         text-align: center;
         h2{
-            text-shadow: 5px 5px 10.9px var(--azul-claro);
+            text-shadow: 0.313rem 0.313rem 0.681rem var(--azul-claro);
         }
     }
     .section-nos{
