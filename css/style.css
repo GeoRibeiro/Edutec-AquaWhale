@@ -56,16 +56,12 @@ main{
             }
             button:hover{
                 background: var(--azul-medio);
-            }
-            button:hover::before {
-                animation: shine 1.5s infinite;
+                cursor: pointer;
             }
             a{
                 margin-bottom: 12.5rem;
                 font-size: 2rem;
-                /*box-shadow: 0px -1px 10.2px 2px #FFFFFF;*/
             }
-            
         }
     }
 }
@@ -122,7 +118,20 @@ main{
     background: var(--azul-claro);
     box-shadow: 5px 5px 25px -2px var(--azul-claro), inset 100px 0px 50px #000923;
     border-radius: 1.313rem;
+    color: var(--branco);
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-family: "Poppins", serif;
     border: none;
+}
+
+.botao button:hover {
+    cursor: pointer;
+    transition: .4s ease-in-out;
+    background: #4F95DA;
+    box-shadow: none;
+    transform: scale(1.03);
+    box-shadow: 0 0 10px var(--azul-highlight), 0 0 20px #fff;
 }
 
 .explorar a{
@@ -147,8 +156,8 @@ main{
         justify-content: center;
         section{
             border: 1px solid var(--azul-claro);
-            width: 15.625rem;
-            height: 28.125rem;
+            max-width: 15.625rem;
+            max-height: 28.125rem;
             box-shadow: 0.375rem 0.25rem 1.125rem 0.125rem var(--azul-claro);
             border-radius: 0.938rem;
             align-items: center;
@@ -172,11 +181,8 @@ main{
     }
 }
 
-/*
-        
-}
 
-button::before {
+.inicio button::before {
     content: '';
     position: absolute;
     top: 0;
@@ -191,11 +197,11 @@ button::before {
     );
 }
 
-button:hover {
+.inicio button:hover {
     transform: scale(1.03);
 }
 
-button:hover::before {
+.inicio button:hover::before {
     animation: shine 1.5s infinite;
 }
 
@@ -206,4 +212,4 @@ button:hover::before {
     100% {
         left: 200%;
     }
-}*/
+}

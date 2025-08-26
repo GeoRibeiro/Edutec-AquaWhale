@@ -1,12 +1,10 @@
 @import "/css/global.css";
 
 main {
-    
     display: inline-block;
     margin: 5px;
     padding: 10px;
     text-align: center;
-
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -33,7 +31,7 @@ button {
     border: none;
     font-size: 1.125rem;
 
-    color: var(--branco);
+    color: var(--azul-claro);
 }
 
 footer {
@@ -42,10 +40,10 @@ footer {
   text-align: center;
   padding: 15px;
   
-  position: fixed;   /* Fixa na tela */
-  bottom: 0;         /* Encosta no fim */
+  position: fixed;   
+  bottom: 0;        
   left: 0;
-  width: 100%;       /* Largura total */
+  width: 100%;      
 }
 
 
@@ -75,3 +73,4 @@ border: 3px solid var(--azul-escuro);
 border: 3px solid var(--azul-escuro);
  border-radius: 2rem;
 }
+

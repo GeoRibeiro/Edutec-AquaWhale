@@ -1,83 +1,124 @@
 @import "./global.css";
 
-:root{
-    branco: #ffffff;
-    preto: #000000;
-    azul-claro: #A2CFF8;
-    preto-roxo: #000026;
-    meio-preto: #000923;
+/* Paleta de Cores */
+:root {
+  --branco: #ffffff;
+  --preto: #000000;
+  --azul-claro: #A2CFF8;
+  --preto-roxo: #000026;
+  --meio-preto: #000923;
 }
 
-h1{
-font-size: 6rem;
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body {
+      background-image: url('./assets/FundoDasONG\'s.svg');
+      background-repeat: no-repeat; /* Não repetir a imagem */
+      background-size: cover;     /* Cobrir toda a área */
+  }
+
+body {  font-family: 'Arial', sans-serif;
+      background: url('fundo-oceano.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+}
+
+/* Navegação */nav { 
+     display: flex;
+     justify-content: space-around; 
+     align-items: center;
+     background-color: rgba(0, 36, 66, 0.9); 
+     padding: 20px;
+}
+
+nav a { 
+     color:#fff;
+     text-decoration: none;
+     font-weight: bold;
+     transition: color 0.3s;
+}
+
+nav a:hover { 
+     color: #00bfff;
+}
+
+h1 { 
+     text-align: center;
+     font-size: 2.5rem;
+     margin-top: 40px;
+}
+
+h2 {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #add8e6; 
+      margin-bottom: 30px;
+}
+
+/* Container das ONGs */.Oceana, .Euapoio, .Greenpeace, .WWF {
+      background-color: rgba(255, 255, 255, 0.1);
+      margin: 20px auto;
+      width: 80%; 
+      border-radius: 15px;
+      padding: 20px; 
+      display: flex;
+      align-items: center;
+      gap: 20px; 
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.Oceana img, .Euapoio img, .Greenpeace img, .WWF img {
+      width: 100px;
+}
+
+p {  
+    flex: 1;
+      color: #eee;
+        font-size: 1rem;
+}
+
+/* Botões com degradê */button.degrade { 
+     background: linear-gradient(to right, #000428, #004e92); 
+      color: white;  border: none;  padding: 12px 20px; 
+       border-radius: 10px;  cursor: pointer; 
+        font-size: 1rem;  transition: 0.3s;
+}
+
+button.degrade:hover {
+      background: linear-gradient(to right, #004e92, #000428);
+}
+
+/* Corrigir links nos botões */button.degrade a { 
+     color: #A2CFF8; 
+      text-decoration: none;
+}
+
+footer{
+    border-top: var(--branco) 0.125rem solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 13.813rem;
+    color: var(--branco);
+    background: #000026;
 
 }
 
-h2{
-font-size: 3rem;
+footer img {  
+    width: 40px;
+    margin-bottom: 10px;
 }
 
-p{
-    font-size: 1rem;
-    font-family: "Poppins", serif;
-}
-
-header * {
-    background: transparent;
-}
-
-border-radius{
-.oceana{
-
-
-    .sections button{
-        height: 2.938rem;
-        width: 16.563rem;
-        background: var(--azul-claro);
-        box-shadow: 5px 5px 25px -2px var(--azul-claro), inset 100px 0px 50px #000923;
-        border-radius: 1.313rem;
+footer button {
+      background: none;
         border: none;
-    }
+          margin: 5px;
 }
 
-.euapoio{
-
-
-
-    .sections button{
-        height: 2.938rem;
-        width: 16.563rem;
-        background: var(--azul-claro);
-        box-shadow: 5px 5px 25px -2px var(--azul-claro), inset 100px 0px 50px #000923;
-        border-radius: 1.313rem;
-        border: none;
-    }
-}
-
-.greenpeace{
-
-    .sections button{
-        height: 2.938rem;
-        width: 16.563rem;
-        background: var(--azul-claro);
-        box-shadow: 5px 5px 25px -2px var(--azul-claro), inset 100px 0px 50px #000923;
-        border-radius: 1.313rem;
-        border: none;
-    }
-
-}
-
-.wwf{
-
-
-    .sections button{
-        height: 2.938rem;
-        width: 16.563rem;
-        background: var(--azul-claro);
-        box-shadow: 5px 5px 25px -2px var(--azul-claro), inset 100px 0px 50px #000923;
-        border-radius: 1.313rem;
-        border: none;
-    }
-
-}
+footer button img { 
+     width: 30px;
 }
