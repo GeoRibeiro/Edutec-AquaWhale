@@ -5,7 +5,7 @@ body{
     background: linear-gradient(180deg, rgba(0, 9, 35, 1) 60%, rgba(0, 0, 0, 1) 100%); /*para colocar gradiente*/
     color: var(--branco);
         .inicio{
-            background: url("/assets/cont-imagens/oceano-img/bg-oceano.svg") no-repeat;
+            background: url("/assets/cont-imagens/curiosidades/Bg-curios.svg no-repeat");
             background-size: cover;
             height: 100vh;
         }    
@@ -68,7 +68,6 @@ h4 {
 }
 
 .pt1-home {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -122,10 +121,24 @@ h4 {
     padding: 190px 90px;
     display: grid;/*divide em em uma familia com filho e mãe podendo organização em linhas*/
     grid-template-columns: 1.2fr 0.9fr 0.1fr;/*mano não sei :/*/
-    gap: 40px;/*espaçamento entre linhas e colunas*/
     max-width: 120000px;/* largura minima para dos element0os para eles não ficarem muito juntinhos um do outro*/
     margin: auto 0; /*ela vai ser arrumar sozinha/ a margin dos elementos, em 0*/
     align-items: start; /*para alinhar especificamento perto da linha do inicio do eixo tranversal*/
+
+    .texto-2{
+        margin-left: 6.563rem;
+        margin-right: 5.938rem;
+        max-width: 30rem;
+        h2{
+            text-align: center;
+            max-width: 28.125rem;
+            margin-bottom: 2.25rem;
+        }
+    }
+    .imagens{
+        display: flex;
+        gap: 2.875rem;
+    }
 
     .img-esquerda{
         margin-top: -6.063rem;
@@ -168,47 +181,17 @@ h4 {
 }
 
 .imgverno {
-
     padding: 40px;
-    
-
-
 }
-
-.conteudo-texto{
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .pag4 {
-
-    
-padding: 60px 40px;
-max-width: 1200px;
-margin: 0 auto;
-
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 
 .pag4 h2{
-
 text-align: center;
 font-size: 3rem;
 font-weight: 300;
