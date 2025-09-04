@@ -5,7 +5,7 @@ body{
     background: linear-gradient(180deg, rgba(0, 9, 35, 1) 60%, rgba(0, 0, 0, 1) 100%); /*para colocar gradiente*/
     color: var(--branco);
         .inicio{
-            background: url("/assets/cont-imagens/curiosidades/Bg-curios.svg no-repeat");
+            background: url("/assets/cont-imagens/oceano-img/bg-oceano.svg");
             background-size: cover;
             height: 100vh;
         }    
@@ -164,25 +164,33 @@ h4 {
     flex-direction: column; /*procurar sobre*/
     justify-content: center; /*procurar sobre*/
     align-items: center;
-    padding-top: 50;
+    padding-top: 50px;
 }
 
 
 .pag3  {
     background-color: var(--azul-escuro);
-    max-width: none;
-    margin: 0;
+    margin: 0 0 26.688rem;
     display: flex;
+    justify-content: space-between;
     align-items: stretch;
-    min-height: 60vh;
+    max-height: 31.375rem;
     background: rgba(0, 51, 102, 0.79);
     position: relative;
-
+    img{
+        margin: 5.188rem 8.125rem 0;
+        height: 39.188rem;
+        width: 52.938rem;
+    }
+    h2{
+        margin-bottom: 1.875rem;
+    }
+    .conteudo-texto{
+        margin-left: 3.813rem;
+        max-width: 28.063rem;
+    }
 }
 
-.imgverno {
-    padding: 40px;
-}
 
 .pag4 {
     padding: 60px 40px;

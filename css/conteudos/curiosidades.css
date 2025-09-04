@@ -5,7 +5,7 @@ body{
     background: linear-gradient(180deg, rgba(0, 9, 35, 1) 60%, rgba(0, 0, 0, 1) 100%); /*para colocar gradiente*/
     color: var(--branco);
         .inicio{
-            background: url("/assets/cont-imagens/oceano-img/bg-oceano.svg") no-repeat;
+            background: url("/assets/cont-imagens/curiosidades/fundoCurio.svg") no-repeat;
             background-size: cover;
             height: 100vh;
         }    

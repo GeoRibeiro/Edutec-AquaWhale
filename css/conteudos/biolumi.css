@@ -1,7 +1,0 @@
-@import "/css/global.css";
-
-body{
-    background: #000923;
-    background: linear-gradient(180deg, rgba(0, 9, 35, 1) 60%, rgba(0, 0, 0, 1) 100%);
-    color: var(--branco);
-}
