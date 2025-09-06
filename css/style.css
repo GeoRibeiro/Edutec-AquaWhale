@@ -141,6 +141,66 @@ main{
 }
 
 
+
+/*aqui ta a bomba do 3d (só pra separar e eu não ficar procurando que nem uma idiota onde ta essa bosta)
+isso já ocorreu......*/
+.explorar-3d {
+
+    text-align:center;
+    padding: 3rem 2rem;
+
+}
+.explorar-3d h2{
+
+    font-size: 2.5rem; /*aumenta tamanho da fonte*/
+    margim: 1rem;
+    font-weight: 400;/*borda da bomba do texto (tipo grossura)*/
+
+}
+
+.explorar-3d p{
+
+    max-width: 700px;  /*Define a largura de um elemento nessa bosta*/
+    margin: 0 auto 2rem auto;
+    font-size: 1.1rem; /*tamanho da fonte ?????????*/
+    line-height: 1.6rem;
+    opacity: 0.9;/*é opacidade darrrrrrrrrrrrrrrrrrrrrrr*/
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .sobre-nos{
     margin-top: 8.563rem;
     margin-bottom: 6.438rem;

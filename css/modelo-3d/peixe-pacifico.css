@@ -13,11 +13,32 @@ body{
 }
 
 
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.biologia-peixe-texto {
+
+    flex: 1;
+    padding-left: 2rem;
 
 
+}
 
-.home-peixepaci h1{
+.biologia-peixe-texto h2 {
 
+    font-size: 2.5rem; /*tamnho do textinho*/
+    margin-bottom: 2rem;/*espaço da margim*/
 
-    padding: 20px;
+}
+
+.biologia-peixe-texto p{
+
+    font-size: 1rem; /*tamanho da texto(fonte) sei la*/
+    line-height:1.6rem; /*e a altura da linha */
+    align-items: justify;
+
 }

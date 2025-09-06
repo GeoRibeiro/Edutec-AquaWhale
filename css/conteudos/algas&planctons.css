@@ -1,0 +1,222 @@
+@import "/css/global.css";  
+
+body{
+    background: #000923;
+    background: linear-gradient(180deg, rgba(0, 9, 35, 1) 60%, rgba(0, 0, 0, 1) 100%); /*para colocar gradiente*/
+    color: var(--branco);
+        .inicio{
+            background: url("/assets/cont-imagens/algas-imgs/FundoAlgasPlanctons.svg");
+            background-size: cover;
+            height: 100vh;
+        }    
+}
+
+.pt1-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50;
+}
+
+h1{
+    color: var(--branco);
+    display: flex;
+    flex-direction: column; /*procurar sobre*/
+    justify-content: center; /*procurar sobre*/
+    align-items: center;
+    padding-top: 50;
+}
+
+h4{
+    color:var(--branco);
+    display: flex;
+    flex-direction: column; /*procurar sobre*/
+    justify-content: center; /*procurar sobre*/
+    align-items: center;
+    padding-top: 50;
+}
+
+.pt1-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+    padding: 50px 20px;/*limita as informações */
+    max-width: 800px;/*define a largura maxima dos elementos podem atingir*/
+    margin: 0 auto;
+    h1{
+        color: var(--branco);
+        /*font-size: 4rem;*/ /*tamanho do titulo*/
+        margin-bottom: 30px;/*espaçamento na parte inferior de um elemento HTML*/
+        font-weight: 300; /*efine a espessura ou peso da fonte*/
+    }
+    h4 {
+        color: var(--branco);
+        font-size: 1.1rem; /*tamanho da fonte*/
+        line-height: 1.6;/*serve para definir o espaçamento vertical entre as linhas de texto*/
+        margin-bottom: 40px; /*espaçamento na parte inferior de um elemento HTML*/
+        max-width: 600px; /*define a largura maxima que um elemenro pode atingir */
+    }
+}
+
+.botao {
+    display: flex;
+    gap: 2rem; /*espaçamentos das linhas e colunas*/
+    justify-content: center; /*serve para centralizar os itens horizontal no eixo principal da tela*/
+    align-items: center; /*serve para centralizar os itens verticalmente no eixo princapl da tela*/
+    margin-top: 50px; /*ara definir uma margem externa de 50 pixels*/
+    button{
+        color:var(--branco);/*cor do titulo do botão*/
+        background-color: #00092393;/*cor do fundo do botão*/
+        /*border: none;*//*remove a borda ?*/
+        border-color: var(--branco);/*COR DA BORDA DARRRRRRRRRRRRRR*/
+        border-radius: 0.3rem; /*arredonda a as bordas do quadrado*/
+        padding: 12px 35px; /*decider o espaçamento interno*/
+        /* x e altura e y a largura*/
+        font-size: 16px; /*definir o tamanho de uma fonte*/
+        cursor: pointer; /*coloca a mãozinha quando passa em cima do botão*/
+        min-width: 120px; /*define a largura minima de um elemento para eles não ficarem muito juntinhos*/
+        height: auto;/*sjusta automaticamente a altura*/
+    /* backdrop-filter: blur(10rem); BLUR NO FUNDO PODE SER UTIL PRA SASA*/
+    }
+}
+
+.pag2{
+    margin: 11rem 0 6.313rem;
+    display: grid;/*divide em em uma familia com filho e mãe podendo organização em linhas*/
+    grid-template-columns: 1.2fr 0.9fr 0.1fr;/*mano não sei :/*/
+    max-width: 120000px;/* largura minima para dos element0os para eles não ficarem muito juntinhos um do outro*/
+    align-items: start; /*para alinhar especificamento perto da linha do inicio do eixo tranversal*/
+
+    .texto-2{
+        margin-left: 6.563rem;
+        margin-right: 5.938rem;
+        max-width: 30rem;
+        h2{
+            text-align: center;
+            max-width: 28.125rem;
+            margin-bottom: 2.25rem;
+        }
+    }
+    .imagens{
+        display: flex;
+        gap: 2.875rem;
+    }
+
+    .img-esquerda{
+        margin-top: -6.063rem;
+    }
+}
+
+.blur{
+    box-shadow: 0px 400px 100px 550px #000923;
+}
+
+
+
+.pag3  {
+    background-color: var(--azul-escuro);
+    margin: 0 0 26.688rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    max-height: 35.375rem;
+    background: rgba(0, 51, 102, 0.79);
+    position: relative;
+    img{
+        margin: 5.188rem 8.125rem 0;
+        height: 39.188rem;
+        width: 52.938rem;
+    }
+    h2{
+        padding-top: 3.563rem;
+        margin-bottom: 1.875rem;
+    }
+    .conteudo-texto{
+        margin-left: 3.813rem;
+        min-width: 28.063rem;
+    }
+}
+
+.pag4{
+    margin: 0 auto;
+    max-height: 52.5rem;
+    max-width: 76.75rem;
+    margin-bottom: 15rem;
+    text-align: center;
+    h2{
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 300;
+        letter-spacing: 2px;/*espaçamento adicional entre as letras*/
+        margin-bottom: 60px;/*margin inferior definida*/
+        color: var(--branco);
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+    h3{
+        margin: 2.813rem 0 3rem;
+    }
+    p{
+        margin-inline: 4.625rem;
+    }
+    .zona-profunda{
+        display: flex;
+        background: #0278A3;
+    }
+    
+    .zona-ressu{
+        display: flex;
+        background: #0278A3;
+    }
+}
+
+.pag5 {
+    text-align: center;/*Alinha o Texto no centro ????????????????*/
+    display: grid; /*arruma em linha e colunas e responsivel tb pq e bommmmmmmmmmmm*/
+    grid-template-columns: repeat(2, 1fr);/*MANO ESSE COMANDO E DOS DEUSES, ele define duas colunas de largura igual em um grandeeeeeeeee layout*/
+    gap: 30px 40px; /*define o espaço das coisinhas*/
+    max-width: 1000px; /*e a largura minina para os coisinhas não ficarem juntinhos*/
+    margin: 0 auto 6.063rem;
+    justify-content: center;
+    h2{
+        font-size: 2rem; /*arruma a bomba do tamanho da bosta do texto */
+        /*esse dia eu estou muito depressiva e raivosa então ignore os comentarios meio sus*/
+        margin-bottom: 50px;/*define a desgraça da area do espaçamento dentro de uma caixa vazia que os afastamentode outro elemento*/
+        font-weight: 600;/*aumenta a grosurinha*/
+        color: var(--branco);
+        grid-column: 1/-1; /*e uma propriedade que define ele ficar no primeiro quadrinho e no quadrinho e termina preenchendo toda a porra da largrura desponivel na grade*/
+    }
+    .cards{
+        background: #D9D9D9;
+        border-radius: 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        height: 10rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;/*especifica que as animações de alteração das propriedades transform e box-shadow devem ter uma duração de 0,3 segundos e um comportamento de "ease" (suave), criando um efeito de transição fluida em vez de um salto instantâneo entre estados. */
+        h4 {
+            color: #0066CC;
+            margin: 0.813rem 0 0.813rem;
+        }
+        p {
+            color: var(--azul-quase-preto); 
+            margin-bottom: 0.563rem;
+        }
+        button {
+            background: #1091FA;
+            color: var(--branco);
+            border: none;/*SOMEEEEEEEEEEEEE CRL DE BORDA*/
+            border-radius: 0.75rem;
+            font-weight: 600;
+            font-size: 0.85rem;
+            cursor: pointer;
+            padding: 0.75rem 1.875rem;
+            text-transform: uppercase;/**/
+        }
+    }
+    .cards:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+    } 
+}

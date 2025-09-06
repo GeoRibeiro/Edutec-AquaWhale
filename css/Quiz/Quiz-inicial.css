@@ -1,0 +1,79 @@
+@import "/css/global.css";
+
+main {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 34px;
+     
+}
+
+h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: var(--azul-claro);
+}
+
+button {
+    height: 2.938rem;
+    width: 16.563rem;
+    background: var(--azul-claro);
+    box-shadow: 5px 5px 25px -2px #091169, inset 100px 0px 50px #002389;
+    border-radius: 1.313rem;
+    border: none;
+    font-size: 1.125rem;
+
+    color: var(--azul-claro);
+}
+
+footer {
+  background: #000026;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  
+  position: fixed;   
+  bottom: 0;        
+  left: 0;
+  width: 100%;      
+}
+
+
+
+.titulo {
+     text-align: center;
+     margin-bottom: 2rem;
+}
+
+.Algas {
+ border: 3px solid var(--azul-escuro);
+ border-radius: 2rem;
+ 
+}
+
+.Oceanografia {
+border: 3px solid var(--azul-escuro);
+ border-radius: 2rem;
+}
+
+.Bioluminescência {
+border: 3px solid var(--azul-escuro);
+ border-radius: 2rem;
+}
+
+.Recife {
+border: 3px solid var(--azul-escuro);
+ border-radius: 2rem;
+}
+
+
+
+
