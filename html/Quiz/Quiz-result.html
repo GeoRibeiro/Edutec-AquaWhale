@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resultado do Quiz</title>
+  <link rel="stylesheet" href="../../css/Quiz.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="quiz-page-body">
+  <nav class="main-nav">
+
+    <ul class="nav-links">
+      <a href="/index.html"><img src="../../assets/logo-site.svg" alt="Logo do site AquaWhale"></a>
+      <li><a href="../conteudos/nav-conteudos.html">Explore os conteúdos</a></li>
+      <li><a href="Quiz-inicio.html">Quiz</a></li>
+      <li><a href="../ONG.html">ONG's</a></li>
+      <li><a href="/index.html#sobre">Sobre Nós</a></li>
+    </ul>
+  </nav>
+
+  <main class="result-modal-container">
+    <div class="result-modal">
+      <button class="close-btn" onclick="window.location.href='Quiz-inicio.html'">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="result-left">
+        <h2>VOCÊ ACERTOU:</h2>
+        <div class="score-circle">
+          <span id="result-text">0/0</span>
+          <img src="../../assets/Quiz/quiz-medalhaResult.svg" alt="Medalha" class="medal-icon">
+        </div>
+      </div>
+      <div class="result-right">
+        <h2>Parabéns!</h2>
+        <p>Quantas perguntas você acertou? O quiz total tem 5 perguntas, mas se caso errou alguma, por que não tentar de novo? Clique em "Tente novamente" aqui embaixo!</p>
+        <button class="retry-btn" onclick="window.location.href='Quiz-inicio.html'">
+          Tente novamente
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <script src="../../js/Quiz-script.js"></script>
+</body>
+</html>

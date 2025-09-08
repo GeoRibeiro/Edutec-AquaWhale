@@ -1,4 +1,4 @@
-@import "./global.css";
+@import "/css/global.css";
 
 body{
     background: #000923;
@@ -8,8 +8,21 @@ body{
         .inicio{
             background: url("/assets/cont-imagens/oceano-img/bg-oceano.svg");
             background-size: cover;
-            height: 100vh;
-        }    
+            min-height: 60.188rem;
+        .setas{
+            margin-top: 2.125rem;
+            font-size: 4.188rem;
+            text-align: center;
+            a{
+                text-decoration: none;
+                color: var(--branco);
+            }
+            img{
+                height: 3.125rem;
+                width: 2.122rem;
+            }
+        }
+    }    
 }
 
 .pt1-home {
@@ -26,10 +39,9 @@ h1{
     flex-direction: column; /*procurar sobre*/
     justify-content: center; /*procurar sobre*/
     align-items: center;
-    padding-top: 50;
 }
 
-h4{
+h4 {
     color:var(--branco);
     display: flex;
     flex-direction: column; /*procurar sobre*/
@@ -45,51 +57,53 @@ h4{
     align-items: center;
     text-align: center;
     flex-grow: 1;
-    padding: 50px 20px;/*limita as informações */
     max-width: 800px;/*define a largura maxima dos elementos podem atingir*/
     margin: 0 auto;
-    h1{
-        color: var(--branco);
-        /*font-size: 4rem;*/ /*tamanho do titulo*/
-        margin-bottom: 30px;/*espaçamento na parte inferior de um elemento HTML*/
-        font-weight: 300; /*efine a espessura ou peso da fonte*/
-    }
-    h4 {
-        color: var(--branco);
-        font-size: 1.1rem; /*tamanho da fonte*/
-        line-height: 1.6;/*serve para definir o espaçamento vertical entre as linhas de texto*/
-        margin-bottom: 40px; /*espaçamento na parte inferior de um elemento HTML*/
-        max-width: 600px; /*define a largura maxima que um elemenro pode atingir */
-    }
+}
+
+.pt1-home h1{
+    color: var(--branco);
+    margin-top: 12rem;
+    /*font-size: 4rem;*/ /*tamanho do titulo*/
+    margin-bottom: 30px;/*espaçamento na parte inferior de um elemento HTML*/
+    font-weight: 300; /*efine a espessura ou peso da fonte*/
+}
+
+.pt1-home h4 {
+    color: var(--branco);
+    font-size: 1.1rem; /*tamanho da fonte*/
+    line-height: 1.6;/*serve para definir o espaçamento vertical entre as linhas de texto*/    max-width: 600px; /*define a largura maxima que um elemenro pode atingir */
 }
 
 .botao {
     display: flex;
-    gap: 2rem; /*espaçamentos das linhas e colunas*/
+    gap: 10rem; /*espaçamentos das linhas e colunas*/
     justify-content: center; /*serve para centralizar os itens horizontal no eixo principal da tela*/
     align-items: center; /*serve para centralizar os itens verticalmente no eixo princapl da tela*/
     margin-top: 50px; /*ara definir uma margem externa de 50 pixels*/
-    button{
-        color:var(--branco);/*cor do titulo do botão*/
-        background-color: #00092393;/*cor do fundo do botão*/
-        /*border: none;*//*remove a borda ?*/
-        border-color: var(--branco);/*COR DA BORDA DARRRRRRRRRRRRRR*/
-        border-radius: 0.3rem; /*arredonda a as bordas do quadrado*/
-        padding: 12px 35px; /*decider o espaçamento interno*/
-        /* x e altura e y a largura*/
-        font-size: 16px; /*definir o tamanho de uma fonte*/
-        cursor: pointer; /*coloca a mãozinha quando passa em cima do botão*/
-        min-width: 120px; /*define a largura minima de um elemento para eles não ficarem muito juntinhos*/
-        height: auto;/*sjusta automaticamente a altura*/
-    /* backdrop-filter: blur(10rem); BLUR NO FUNDO PODE SER UTIL PRA SASA*/
-    }
+}
+
+.botao button{
+    color: var(--branco);/*cor do titulo do botão*/
+    background: rgba(0,9,35, 0.4);
+    /*border: none;*//*remove a borda ?*/
+    border: 0.125rem solid var(--branco);
+    border-radius: 0.813rem; /*arredonda a as bordas do quadrado*/
+    /* x e altura e y a largura*/
+    font-size: 16px; /*definir o tamanho de uma fonte*/
+    cursor: pointer; /*coloca a mãozinha quando passa em cima do botão*/
+    height: 4.188rem;/*sjusta automaticamente a altura*/
+    width: 16.688rem;
+    font-size: 1.25rem;
+    font-family: "Poppins", serif;
+    font-weight: bold;
+   /* backdrop-filter: blur(10rem); BLUR NO FUNDO PODE SER UTIL PRA SASA*/
 }
 
 .pag2{
     margin: 11rem 0 6.313rem;
     display: grid;/*divide em em uma familia com filho e mãe podendo organização em linhas*/
     grid-template-columns: 1.2fr 0.9fr 0.1fr;/*mano não sei :/*/
-    max-width: 120000px;/* largura minima para dos element0os para eles não ficarem muito juntinhos um do outro*/
     align-items: start; /*para alinhar especificamento perto da linha do inicio do eixo tranversal*/
 
     .texto-2{
@@ -128,9 +142,9 @@ h4{
     background: rgba(0, 51, 102, 0.79);
     position: relative;
     img{
-        margin: 5.188rem 8.125rem 0;
+        margin: 5.188rem 2rem 8.125rem;
         height: 39.188rem;
-        width: 52.938rem;
+        width: 50rem;
     }
     h2{
         padding-top: 3.563rem;

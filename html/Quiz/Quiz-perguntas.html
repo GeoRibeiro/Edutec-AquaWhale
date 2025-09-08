@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz perguntas</title>
+  <link rel="stylesheet" href="../../css/Quiz.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="quiz-page-body">
+  <nav class="main-nav">
+    
+    <ul class="nav-links">
+      <a href="/index.html"><img src="../../assets/logo-site.svg" alt="Logo do site AquaWhale"></a>
+      <li><a href="../conteudos/nav-conteudos.html">Explore os conteúdos</a></li>
+      <li><a href="Quiz-inicio.html">Quiz</a></li>
+      <li><a href="../ONG.html">ONG's</a></li>
+      <li><a href="/index.html#sobre">Sobre Nós</a></li>
+    </ul>
+  </nav>
+
+  <div class="quiz-main-container">
+    <div class="quiz-header-nav">
+      <div class="exit-btn" onclick="window.location.href='Quiz-inicio.html'">
+        <i class="fas fa-arrow-left"></i> Sair
+      </div>
+      <div id="question-count">Pergunta 1/5</div>
+    </div>
+
+    <div id="question-container"></div>
+    <div class="progress-container">
+      <div id="progress-bar"></div>
+    </div>
+    
+    <div class="quiz-bottom-nav">
+      <button class="finalizar-btn">Finalizar</button>
+      <button id="next-btn">Próxima <i class="fas fa-arrow-right"></i></button>
+    </div>
+  </div>
+
+  <script src="../../js/Quiz-script.js"></script>
+</body>
+</html>

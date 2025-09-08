@@ -20,6 +20,14 @@
     --preto: #000 ;
 }
 
+.seta-prox{
+    filter: drop-shadow(0 0 0.313rem var(--branco));
+}
+
+.seta-antes{
+    filter: drop-shadow(0 0 0.313rem var(--branco));
+}
+
 html {
     scroll-behavior: smooth;
 }

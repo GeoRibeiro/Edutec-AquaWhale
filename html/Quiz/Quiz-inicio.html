@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz - AquaWhale</title>
+  <link rel="stylesheet" href="../../css/Quiz.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <nav class="main-nav">
+    <ul class="nav-links">
+      <a href="/index.html"><img src="../../assets/logo-site.svg" alt="Logo do site AquaWhale"></a>
+      <li><a href="../conteudos/nav-conteudos.html">Explore os conteúdos</a></li>
+      <li><a href="Quiz-inicio.html">Quiz</a></li>
+      <li><a href="../ONG.html">ONG's</a></li>
+      <li><a href="/index.html#sobre">Sobre Nós</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero-section">
+    <h1>Quiz</h1>
+    <p>Quizes sobre os conteúdos</p>
+  </header>
+
+  <main class="quiz-options">
+    <div class="card" onclick="startQuiz('algas')">
+      <div class="card-image-container">
+        <img src="../../assets/Quiz/quiz-algas.svg" alt="Algas e Plânctons">
+      </div>
+      <h2>Algas e Plânctons</h2>
+      <p>São organismos microscópicos que vivem nos oceanos. As algas produzem oxigênio e os plânctons são base da cadeia alimentar marinha.</p>
+      <button>Ir para o quiz</button>
+    </div>
+    <div class="card" onclick="startQuiz('oceanografia')">
+      <div class="card-image-container">
+        <img src="../../assets/Quiz/quiz-oceano.svg" alt="Oceanografia">
+      </div>
+      <h2>Oceanografia</h2>
+      <p>É a ciência que estuda os oceanos, como suas águas, seres vivos, fundo do mar e influência no clima.</p>
+      <button>Ir para o quiz</button>
+    </div>
+    <div class="card" onclick="startQuiz('bioluminescencia')">
+      <div class="card-image-container">
+        <img src="../../assets/Quiz/quiz-biolumi.svg" alt="Bioluminescência">
+      </div>
+      <h2>Bioluminescência</h2>
+      <p>É a luz produzida por alguns animais marinhos, como plânctons e peixes, usada para defesa, caça ou comunicação.</p>
+      <button>Ir para o quiz</button>
+    </div>
+    <div class="card" onclick="startQuiz('recife')">
+      <div class="card-image-container">
+        <img src="../../assets/Quiz/quiz-recifeCorais.svg" alt="Recife de Corais">
+      </div>
+      <h2>Recife de Corais</h2>
+      <p>São estruturas formadas por corais que abrigam muitas espécies marinhas e estão ameaçadas pelas ações humanas.</p>
+      <button>Ir para o quiz</button>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <img src="../../assets/logo-site.svg" alt="Logo AquaWhale">
+      <p>Este site é para fins educativos, com o conceito de dar visibilidade a vida marinha neste mundo, para obterem uma visão sobre a Biologia Marinha.</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+    <p class="copyright">© 2025 AquaWhale, Inc. Todos direitos reservados</p>
+  </footer>
+
+  <script src="../../js/Quiz-script.js"></script>
+</body>
+</html>

@@ -149,52 +149,75 @@ isso já ocorreu......*/
     text-align:center;
     padding: 3rem 2rem;
 
+    margin: 11rem 0 6.313rem;
+    display: grid;/*divide em em uma familia com filho e mãe podendo organização em linhas*/
+    grid-template-columns: 1.2fr 0.9fr 0.1fr;/*mano não sei :/*/
+    max-width: 10000px;/* largura minima para dos element0os para eles não ficarem muito juntinhos um do outro*/
+    align-items: start; /*para alinhar especificamento perto da linha do inicio do eixo tranversal*/
+
+
 }
-.explorar-3d h2{
+.textinho{
 
-    font-size: 2.5rem; /*aumenta tamanho da fonte*/
-    margim: 1rem;
-    font-weight: 400;/*borda da bomba do texto (tipo grossura)*/
+   
+    margin-left: 4.563rem;
+    margin-right: 5.938rem;
+ 
+    h2{
+        height: 60px;
+        max-width: 50.125rem;
+        margin-bottom: 2.25rem;
+        max-width: 70rem;
+        
+        
+    }
+
+    p {
+       
+        margin-left: 6.563rem;
+        margin-right: 5.938rem;
+        font-size: 20px;
+        max-width: 35rem;
+    }
+}
+
+.modelo-3d{
+
+    display:flex; 
+    flex-direction: column;
+    align-items: center;
+    gap:1.5rem; /*espaçamentos ta ligado*/
 
 }
 
-.explorar-3d p{
+.modelo-3d img {
 
-    max-width: 700px;  /*Define a largura de um elemento nessa bosta*/
-    margin: 0 auto 2rem auto;
-    font-size: 1.1rem; /*tamanho da fonte ?????????*/
-    line-height: 1.6rem;
-    opacity: 0.9;/*é opacidade darrrrrrrrrrrrrrrrrrrrrrr*/
+    width: 350;
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+
+.modelo-3d button {
+
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 25px;
+    background-color:#003366;
+    color:white;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor:pointer;
+    transition: all 0.3s ease;
+    margin: 0.2rem;
+    box-shadow: 0.313rem 0.313rem 1.563rem -0.125rem var(--azul-claro), inset 100px 0px 50px #000923;
     
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.modelo-3d button:hover {
+    background: #3b82f6;
+    transform: scale(1.05);
+}
 
 
 
@@ -240,7 +263,6 @@ isso já ocorreu......*/
         }
     }
 }
-
 
 .inicio button::before {
     content: '';
