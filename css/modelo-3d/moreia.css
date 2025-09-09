@@ -4,7 +4,7 @@ body{
     background: linear-gradient(180deg, #000923 75.48%, #000000 96%);
     color: var(--branco);
     .inicio{
-        background: url("/assets/modelo 3d/tub-baleia/bg-tubba.svg") no-repeat;
+        background: url("/assets/modelo 3d/moreia/bg-moreia.svg") no-repeat;
         background-size: cover;
         .capa{
             height: 100vh;
@@ -13,7 +13,7 @@ body{
                 position: absolute;
                 right: 0;
                 margin: 6.813rem 1.563rem 0 0;
-                animation: bounceXRight 2s infinite;
+                animation: bounceX 2s infinite;
             }
             .seta-antes{
                 position: absolute;
@@ -25,10 +25,17 @@ body{
     }
     #blur{
         box-shadow: 0 25rem 6.25rem 34.375rem #000923;
+
     }
 }
+.seta-prox:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+    filter: drop-shadow(0 0 0.625rem var(--branco));
+}
 
-@keyframes bounceXRight {
+
+@keyframes bounceX {
   0%, 100% {
     transform: translateX(0);
   }
@@ -38,12 +45,12 @@ body{
 }
 
 @keyframes bounceXLeft {
-  0%, 100% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(1.875rem);
-  }
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(1.875rem);
+    }
 }
 
 .intro{
@@ -63,61 +70,58 @@ body{
             }
         }
         img{
-            width: 40.125rem;
-            height: 27.125rem;
+            width: 43.75rem;
+            height: 39.375rem;
         }
     }
 }
 
 .nasc{
     text-align: center;
-    img{
-        margin: 1.875rem 0 0;
-        width: 100vw;
+    p{
+        margin: 1rem auto 3.75rem;
+        max-width: 54.125rem;
     }
-    #blur-nasc{
-        box-shadow: 0 1rem 10rem 16rem #000923;
-        margin-bottom: 6.75rem;
-        position: relative;
-    }
-    .passos{
+    .processos{
         display: flex;
-        gap: 5.625rem;
-        margin-inline: 5.5rem;
-        margin-bottom: 14.063rem;
-        position: relative;
-        h2{
-            margin-bottom: 3.375rem;
+        justify-content: center;
+        gap: 1.438rem;
+        margin-bottom: 7.938rem;
+        p{
+            max-width: 18.813rem;
+        }
+        img{
+            margin: 0 0 2.5rem 0;
+            width: 100%;
+        }
+        h4{
+            margin-bottom: 1.688rem;
+        }
+        .claro{
+            background: #0066CC;
+            height: 47.125rem;
+            width: 23.313rem;
+        }
+        .escuro{
+            background: var(--azul-escuro);
+            height: 47.125rem;
+            width: 23.313rem;
         }
     }
 }
-
-.tipos{
-    text-align: center;
-    .imagens{
-        margin: 2.313rem 0 12.313rem;
-        justify-content: center;
-        display: flex;
-        gap: 11.25rem;
-    }
-}
-
 .biologia{
     display: flex;
-    gap: 3rem;
-    margin-inline: 3.688rem;
     justify-content: center;
-    align-items: center;
-    div{
+    margin: 18.438rem 3.75rem 5.625rem;
+    gap: 2.313rem;
+    .texto{
         max-width: 33.625rem;
-        text-align: center;
         h2{
-            margin-bottom: 2.313rem;
             text-align: center;
+            margin-bottom: 4.188rem;
         }
     }
 }
-
 
 .seta{
     display: flex;
@@ -125,7 +129,7 @@ body{
 }
 
 .seta img{
-    margin: 5.625rem 0 5rem;
+    margin-bottom: 5rem;
     margin-inline: 0;
     filter: drop-shadow(0 0 0.313rem var(--branco));
     animation: bounceY 2s infinite;

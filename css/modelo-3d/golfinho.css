@@ -4,17 +4,11 @@ body{
     background: linear-gradient(180deg, #000923 75.48%, #000000 96%);
     color: var(--branco);
     .inicio{
-        background: url("/assets/modelo 3d/tub-baleia/bg-tubba.svg") no-repeat;
+        background: url("/assets/modelo 3d/golfinho/bg-golf.svg") no-repeat;
         background-size: cover;
         .capa{
             height: 100vh;
             margin: 9.813rem 0 0 4.5rem;
-            .seta-prox{
-                position: absolute;
-                right: 0;
-                margin: 6.813rem 1.563rem 0 0;
-                animation: bounceXRight 2s infinite;
-            }
             .seta-antes{
                 position: absolute;
                 left: 0;
@@ -28,14 +22,6 @@ body{
     }
 }
 
-@keyframes bounceXRight {
-  0%, 100% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(-1.875rem);
-  }
-}
 
 @keyframes bounceXLeft {
   0%, 100% {
@@ -63,8 +49,8 @@ body{
             }
         }
         img{
-            width: 40.125rem;
-            height: 27.125rem;
+            width: 50rem;
+            height: 38rem;
         }
     }
 }
