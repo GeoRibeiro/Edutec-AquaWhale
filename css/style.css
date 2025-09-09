@@ -11,6 +11,22 @@ body{
     }
 }
 
+.seta{
+    filter: drop-shadow(0 0 0.313rem var(--branco));
+    animation: bounceY 2s infinite;
+}
+
+
+
+@keyframes bounceY {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-1.5rem);
+    }
+}
+
 a{
     text-decoration: none;
     color: var(--branco);
@@ -46,23 +62,67 @@ main{
                 width: 26.875rem;
                 text-align: center;
             }
-            button{
+            .botoes{
                 width: 35rem;
                 height: 5rem;
+                display: flex;
+                justify-content: center;
                 margin-bottom: 2.5rem;
-                background: var(--azul-highlight);
+                font-size: 2rem;
                 border: none;
                 box-shadow: 0 0 0.625rem var(--azul-highlight), 0 0 1.25rem #fff;
-            }
-            button:hover{
-                background: var(--azul-medio);
-                cursor: pointer;
+                button{
+                    background: var(--azul-highlight);
+                    color: var(--branco);
+                    font-size: 2rem;
+                    font-family: "Quando";
+                    border-radius: 0;
+                }
+                
+                button:hover{
+                    background: var(--azul-medio);
+                    cursor: pointer;
+                    transform: scale(1.03);
+                    box-shadow: 0 0 0.625rem var(--azul-highlight), 0 0 1.25rem #fff;
+                }
+                button:hover::before {
+                    animation: shine 1.5s infinite;
+                }
             }
             a{
                 margin-bottom: 12.5rem;
                 font-size: 2rem;
             }
         }
+    }
+}
+
+
+.botoes button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+         rgba(255, 255, 255, 0),
+         rgba(255, 255, 255, 0.3),
+         rgba(255, 255, 255, 0)
+    );
+}
+
+.inicio button:hover::before {
+    animation: shine 1.5s infinite;
+}
+
+@keyframes shine {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 200%;
     }
 }
 
@@ -159,13 +219,14 @@ isso já ocorreu......*/
 }
 .textinho{
 
-   
+    text-align: left;
     margin-left: 4.563rem;
     margin-right: 5.938rem;
+    
  
     h2{
-        height: 60px;
-        max-width: 50.125rem;
+        height: 50px;
+        max-width: 40.125rem;
         margin-bottom: 2.25rem;
         max-width: 70rem;
         
@@ -178,6 +239,7 @@ isso já ocorreu......*/
         margin-right: 5.938rem;
         font-size: 20px;
         max-width: 35rem;
+       
     }
 }
 
@@ -189,6 +251,67 @@ isso já ocorreu......*/
     gap:1.5rem; /*espaçamentos ta ligado*/
 
 }
+
+
+
+
+.modelo-3d {
+    position: relative; /* referência pros botões ficarem "em cima" da Terra */
+    display: inline-block;
+  }
+  
+  .modelo-3d img {
+    width: 850px; /* aumenta um pouco o tamanho */
+    border-radius: 50%;
+    /*box-shadow: 0 0 700px #1091FA;*/
+ 
+  }
+  
+  /* estilo dos botões */
+  .modelo-3d a button {
+    position: absolute;
+    background: #022b55;
+    padding: 0.6rem 1.2rem;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px #1091FA;
+  }
+  
+  /* posição de cada botão */
+  .modelo-3d a:nth-child(2) button { /* Oceano Atlântico */
+    top: 50%;/*aqui desce e sobe*/
+    left: -50px;/* mano aqui junta ta ligado(lado pro outro)*/
+    transform: translateY(-50%);
+  }
+  
+  .modelo-3d a:nth-child(3) button { /* Oceano Índico */
+    top: 47%;
+    right: 60px;
+    transform: translateY(-50%);
+
+  }
+  
+  .modelo-3d a:nth-child(4) button { /* Oceano Pacífico */
+    top: 15%;
+    right: -4px;
+    transform: translateY(-50%);
+
+  }
+  
+  /* hover bonito */
+  .modelo-3d a button:hover {
+    background: #3b82f6;
+    transform: scale(1.1);
+  }
+  
+
+
+
 
 .modelo-3d img {
 
@@ -221,9 +344,6 @@ isso já ocorreu......*/
 
 
 
-
-
-
 .sobre-nos{
     margin-top: 8.563rem;
     margin-bottom: 6.438rem;
@@ -244,6 +364,9 @@ isso já ocorreu......*/
             box-shadow: 0.375rem 0.25rem 1.125rem 0.125rem var(--azul-claro);
             border-radius: 0.938rem;
             align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             i{
                 font-size: 1.5rem;
                 color: var(--azul-claro);
@@ -260,38 +383,6 @@ isso já ocorreu......*/
                 height: 9.25rem;
                 width: 9.25rem;
             }
-        }
     }
 }
-
-.inicio button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(
-        to right,
-         rgba(255, 255, 255, 0),
-         rgba(255, 255, 255, 0.3),
-         rgba(255, 255, 255, 0)
-    );
-}
-
-.inicio button:hover {
-    transform: scale(1.03);
-}
-
-.inicio button:hover::before {
-    animation: shine 1.5s infinite;
-}
-
-@keyframes shine {
-    0% {
-        left: -100%;
-    }
-    100% {
-        left: 200%;
-    }
 }

@@ -15,6 +15,12 @@ body{
                 margin: 6.813rem 1.563rem 0 0;
                 animation: bounceX 2s infinite;
             }
+            .seta-antes{
+                position: absolute;
+                left: 0;
+                margin: 6.813rem 0 0 1.563rem;
+                animation: bounceXLeft 2s infinite;
+            }
         }
     }
     #blur{
@@ -36,6 +42,16 @@ body{
   50% {
     transform: translateX(-1.875rem);
   }
+}
+
+
+@keyframes bounceXLeft {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(1.875rem);
+    }
 }
 
 .intro{
@@ -104,6 +120,7 @@ body{
 
 .biologia{
     display: flex;
+    justify-content: center;
     margin: 18.438rem 3.75rem 5.625rem;
     gap: 2.313rem;
     .texto{

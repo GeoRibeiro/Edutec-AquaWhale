@@ -1,83 +1,128 @@
 @import "/css/global.css";
 
-
-:root {
-  --azul-claro: #A2CFF8;
-  --preto-roxo: #000026;
-  --meio-preto: #000923;
-}
-
-* {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-}
-
-
-.body {
-      background-image: url('./assets/FundoDasONGs.svg');
-      background-repeat: no-repeat; 
-      background-size: cover;    
-
-
-body:fundo {
-      font-family: "Poppins", serif;
-      font-size: 16px;
+    body {
+      background: #000923;
+      color: #fff;
       line-height: 1.6;
+    }
+    
+    .background {
+      width: 100%;
+      height: 100%;
+      background: url("/assets/ongs/fundo.svg")  no-repeat;
+      background-position: center;
+    }
+    
+    header {
+    width: 100%;
+    background: rgba(0, 9, 35, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between; /* logo à esquerda, menu à direita */
+    align-items: center;
+    z-index: 1000;
 }
-
-border:branco{
-
-      margin: 0;
-      padding: 20px;
-      min-height: 100vh;
+    
+    nav {
       display: flex;
-      flex-direction: column;
-
-}
-
-}
-
-/*Tilulo*/
-.h1 { 
-     text-align: center;
-     font-size: 2.5rem;
-     margin-top: 40px;
-     color: #fff;
-}
-
-/*2-titulo*/
-.h2 {
+      gap: 2rem;
+      align-items: center;
+    }
+    
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    
+    nav a:hover {
+      color: #00aaff;
+    }
+    
+    h1 {
+      margin-top: 120px;
       text-align: center;
-      font-size: 1.2rem;
-      color: #eee; 
+      font-size: 2.8rem;
+    }
+    
+    h2 {
+      text-align: center;
       margin-bottom: 30px;
-}
-
-/*Paragrafo*/
-.p {  
-      flex: 1;
-      color: #eee;
-       font-size: 1rem;
-  }
-
-/*Contanes*/
-.Oceana, .Euapoio, .Greenpeace, .WWF {
-      background-color: rgba(255, 255, 255, 0.1);
+      font-weight: 400;
+      color: #b5c7e0;
+    }
+    
+    
+    .Oceana,
+    .Euapoio,
+    .Greenpeace,
+    .WWF {
+      background: linear-gradient(180deg, ); /* degrade azul escuro */
+      border: 1px solid #cce6ff; /* borda clara */
+      border-radius: 20px;
+      padding: 25px;
       margin: 20px auto;
-      width: 80%; 
-      border-radius: 15px;
-      padding: 20px; 
+      width: 80%;
+      max-width: 1000px;
       display: flex;
       align-items: center;
-      gap: 20px; 
-      box-shadow: 0 0 15px rgba(0,0,0,0.3);
-}
-
-/*imagens*/
-.Oceana ong-1.svg, .Euapoio img, .Greenpeace img, .Wwf img {
-      width: 100px;
-}
-
-
-
+      justify-content: space-between;
+      transition: 0.3s;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* sombra leve */
+    }
+    
+    .Oceana:hover,
+    .Euapoio:hover,
+    .Greenpeace:hover,
+    .WWF:hover {
+      transform: scale(1.02);
+    }
+    
+    .Oceana {
+    background: linear-gradient(180deg, rgba(10, 31, 60, 0.9), rgba(11, 43, 82, 0.9)),
+    url("/assets/ongs/ong-1.svg") no-repeat center center/cover;
+    }
+    .Euapoio {
+      background: linear-gradient(180deg, rgba(10, 31, 60, 0.9), rgba(11, 43, 82, 0.9)),
+    url("/assets/ongs/Euapoio.svg") no-repeat center center/cover;
+    }
+    .Greenpeace img,
+    .WWF img {
+      max-width: 250px; /* aumenta o tamanho do logo */
+      height: auto;
+      margin-right: 20px;
+    }
+    
+    .Oceana p,
+    .Euapoio p,
+    .Greenpeace p,
+    .WWF p {
+      flex: 1;
+      margin: 0 20px;
+      font-size: 1rem;
+      font-weight: 400;
+      color: #dbe6f2; /* texto mais claro */
+    }
+    
+    
+    .degrade {
+      background: linear-gradient(90deg, #00183d, #0aaeff);
+      border: none;
+      padding: 14px 28px;
+      border-radius: 18px;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+      transition: 0.3s;
+    }
+    
+    .degrade:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #0aaeff;
+    }

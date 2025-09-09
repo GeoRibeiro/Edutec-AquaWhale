@@ -1,0 +1,169 @@
+@import "/css/global.css";
+
+body{
+    background: linear-gradient(180deg, #000923 75.48%, #000000 96%);
+    color: var(--branco);
+    .inicio{
+        background: url("/assets/modelo 3d/tartaruga/bg-tortuguita.svg") no-repeat;
+        background-size: cover;
+        .capa{
+            height: 100vh;
+            margin: 9.813rem 0 0 4.5rem;
+            .seta-prox{
+                position: absolute;
+                right: 0;
+                margin: 6.813rem 1.563rem 0 0;
+                animation: bounceX 2s infinite;
+            }
+            .seta-antes{
+                position: absolute;
+                left: 0;
+                margin: 6.813rem 0 0 1.563rem;
+                animation: bounceXLeft 2s infinite;
+            }
+        }
+    }
+    #blur{
+        box-shadow: 0 25rem 6.25rem 34.375rem #000923;
+
+    }
+}
+.seta-prox:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+    filter: drop-shadow(0 0 0.625rem var(--branco));
+}
+
+
+@keyframes bounceX {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-1.875rem);
+  }
+}
+
+
+@keyframes bounceXLeft {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(1.875rem);
+    }
+}
+
+.intro{
+    margin-bottom: 20rem;
+    img{
+        height: 28.5rem;
+        left: 0;
+    }
+    .comeco{
+        display: flex;
+        margin-left: 3.125rem;
+        justify-content: space-between;
+        div{
+            width: 32.25rem;
+            h2{
+                margin-bottom: 2.5rem;
+            }
+        }
+        img{
+            right: 0;
+        }
+    }
+}
+
+.nasc{
+    text-align: center;
+    p{
+        margin: 1rem auto 3.75rem;
+        max-width: 54.125rem;
+    }
+    .processos{
+        display: flex;
+        justify-content: center;
+        gap: 1.438rem;
+        margin-bottom: 7.938rem;
+        p{
+            max-width: 18.813rem;
+        }
+        img{
+            margin: 0 0 2.5rem 0;
+        }
+        h4{
+            margin-bottom: 1.688rem;
+        }
+        .claro{
+            background: #0066CC;
+            height: 47.125rem;
+            width: 23.313rem;
+        }
+        .escuro{
+            background: var(--azul-escuro);
+            height: 47.125rem;
+            width: 23.313rem;
+        }
+    }
+}
+
+.tamanho{
+    text-align: center;
+    .ciclo{
+        margin-top: 1.75rem;
+        display: flex;
+        justify-content: center;
+        gap: 2.25rem;
+        p{
+            max-width: 18.75rem;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            gap: 4.938rem;
+        }
+    }
+}
+
+.biologia{
+    display: flex;
+    margin: 18.438rem 3.75rem 5.625rem;
+    gap: 2.313rem;
+    .texto{
+        max-width: 33.625rem;
+        h2{
+            text-align: center;
+            margin-bottom: 4.188rem;
+        }
+    }
+}
+
+.seta{
+    display: flex;
+    justify-content: center;
+}
+
+.seta img{
+    margin-bottom: 5rem;
+    margin-inline: 0;
+    filter: drop-shadow(0 0 0.313rem var(--branco));
+    animation: bounceY 2s infinite;
+}
+
+.seta img:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+    filter: drop-shadow(0 0 0.625rem var(--branco));
+}
+
+
+@keyframes bounceY {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1.875rem);
+  }
+}

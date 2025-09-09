@@ -7,8 +7,6 @@ body {
 }
 
 .main-nav {
-    border-bottom: 1px solid var(--preto);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     height: 4.938rem;
     display: flex;
     align-items: center;
@@ -16,11 +14,6 @@ body {
 
     justify-content: space-between;
     
-}
-
-.main-nav .logo img {
-    width: 4.188rem;
-    height: 4rem;
 }
 
 .nav-links {
@@ -37,20 +30,19 @@ body {
 
 /* Estilo da seção de título */
 .hero-section {
-    padding: 5rem 0 2rem;
+    padding: 2rem 0 1rem;
     text-align: center;
 }
 
 .hero-section h1 {
     font-size: 3rem;
-    margin-bottom: 0.5rem;
-    text-shadow: 2px 2px 4px var(--preto);
+    margin-bottom: 1rem;
 }
+
 
 /* Estilo dos cards */
 .quiz-options {
     padding: 2rem;
-    background-color: var(--azul-quase-preto);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
@@ -59,56 +51,59 @@ body {
 .card {
     display: flex;
     flex-direction: column;
-    background: var(--azul-medio);
     border-radius: 1rem;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
     cursor: pointer;
+    border: 2px solid white;
+    align-items: center;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-}
+
 
 .card .card-image-container {
     height: 150px;
-    overflow: hidden;
 }
 
 .card img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s;
+    margin-top: 1rem ;
+   
 }
 
-.card:hover img {
-    transform: scale(1.1);
-}
+
 
 .card h2 {
+    text-align: center;
     padding: 1rem 1rem 0;
     margin: 0;
     font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem ;
 }
 
 .card p {
+    text-align: center;
     flex-grow: 1;
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
     opacity: 0.8;
     line-height: 1.4;
+    margin-bottom: 2rem;
+    
 }
 
 .card button {
     background: var(--azul-claro);
     color: var(--branco);
     border: none;
+    margin-bottom: 3rem;
     padding: 1rem;
     cursor: pointer;
-    width: 100%;
-    border-radius: 0 0 1rem 1rem;
+    width: 15rem;
+    border-radius: 2rem 2rem 2rem 2rem;
     font-size: 1rem;
     transition: background 0.3s;
     box-shadow: 0.313rem 0.313rem 1.563rem -0.125rem var(--azul-claro), inset 100px 0px 50px #000923;
@@ -116,26 +111,6 @@ body {
 
 .card button:hover {
     background: var(--azul-escuro);
-}
-
-/* Estilo do rodapé */
-footer {
-    height: auto;
-    background: var(--azul-quase-preto);
-    padding: 2rem 1rem;
-}
-
-.copyright {
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.copyright p {
-    flex-basis: 100%;
-    text-align: center;
 }
 
 .social-links {
@@ -170,19 +145,22 @@ footer {
 
 /* Fundo da página do quiz */
 .quiz-page-body {
-    background: url('/assets/Quiz/bg-quiz-perguntas.svg') no-repeat center center/cover;
+    background: url('/assets/Quiz/bg-oceano.svg') no-repeat center center/cover;
 }
+
 
 /* Container principal do quiz */
 .quiz-main-container {
     max-width: 800px;
     margin: 5rem auto;
     padding: 2rem;
-    background: rgba(0, 35, 137, 0.7);
     border-radius: 20px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    background: var(--azul-quase-preto);
+    opacity: 0.8;
+    border: 1px solid white;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    filter: drop-shadow(0 0 10px black);
 }
 
 /* Estilo da navegação interna do quiz */
@@ -338,19 +316,25 @@ footer {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
+    filter: drop-shadow(0 0 10px black);
 }
 
 .close-btn {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    background: none;
+    font-weight: bold;
+    border-radius: 5rem 5rem 5rem 5rem;
+    width: 35px;
+    height: 35px;
+
     border: none;
     color: var(--branco);
     font-size: 1.5rem;
     cursor: pointer;
     opacity: 0.8;
     transition: opacity 0.3s;
+    background: var(--azul-claro);
 }
 
 .close-btn:hover {
@@ -367,7 +351,8 @@ footer {
 }
 
 .result-left {
-    background: rgba(0, 35, 137, 0.9);
+    background:var(--azul-escuro);
+    opacity: 0.8;
 }
 
 .result-left h2 {
@@ -376,8 +361,8 @@ footer {
 }
 
 .score-circle {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     background: var(--azul-claro);
     border-radius: 50%;
     display: flex;
@@ -390,7 +375,7 @@ footer {
 }
 
 .medal-icon {
-    width: 60px;
+    width: 80px;
     height: auto;
     position: absolute;
     bottom: -20px;
@@ -399,8 +384,9 @@ footer {
 
 .result-right h2 {
     font-size: 2rem;
-    margin-bottom: 1rem;
-    color: var(--azul-claro);
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    color: var(--branco);
 }
 
 .result-right p {
@@ -420,6 +406,7 @@ footer {
     cursor: pointer;
     transition: background 0.3s, box-shadow 0.3s;
     box-shadow: 0 0 10px rgba(16, 145, 250, 0.5);
+    box-shadow: 0.313rem 0.313rem 1.563rem -0.125rem var(--azul-claro), inset 100px 0px 50px #000923;
 }
 
 .retry-btn:hover {

@@ -5,7 +5,7 @@ body{
     background-size: cover;
     color: var(--branco);
     text-align: center;
-    height: 100vh;
+    height: 120vh;
 
     h2{
         margin-top: 0.938rem;
@@ -13,46 +13,125 @@ body{
     }
 }
 
-.cards{
-
-
-    height: 600px;
-    
-}
 
 
 
 
-.navegacao-cont{
-    margin: 22.813rem 0 3.063rem;
+  main h2, .titulo-conteudos {
+    margin: 2rem 0;
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 3px 8px #0a3365;
+  }
+  
+ 
+  .cards {
+    margin-top: 5rem;
     display: flex;
-    justify-content: space-between;
-    gap: 3.563rem;
-    .desc{
-        max-width: 26.375rem;
-        text-align: left;
-        padding-left: 1.063rem;
-        border-left: 0.125rem solid #0A3365;
-        p{
-            margin-top: 0.125rem;
-        }
-        button{
-            border: none;
-            background: var(--azul-highlight);
-            box-shadow: 2px 0px 24.7px -1px #1091FA;
-            color: var(--branco);
-            text-align: center;
-            font-size: 1.75rem;
-            width: 3.313rem;
-            height: 2.875rem;
-            margin-bottom: 1.5rem;
-        }
-        a{
-            text-shadow: 1px 1px 6.8px #A2CFF8;
-            text-decoration: none;
-            color: var(--branco);
-            font-size: 1.25rem;
-            line-height: 1.875rem;
-        }
-    }
-}
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .cards .siema {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .cards .siema div {
+    position: relative;
+   
+  }
+  
+  .cards img {
+    position: relative;
+    display: block;
+    margin: 0 auto; 
+    width: 260px;
+    border-radius: 6px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+    transition: transform 0.3s;
+  }
+  
+  .cards img:hover {
+    transform: scale(1.05);
+  }
+  
+  .cards p {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    background: rgba(0,0,0,0.6);
+    padding: 0.5rem;
+    border-radius: 0 0 6px 6px;
+  }
+  
+
+  .prev, .next {
+   
+    
+    display: flex;
+    justify-content: center;
+    border: none;
+    background: #A2CFF8;
+    color: white;
+    font-size: 1.5rem;
+    margin: 2rem 1.5rem;
+    padding: 1.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 87.5rem;
+  }
+  
+  .prev:hover, .next:hover {
+    background: #01345e;
+  
+  }
+  
+  
+  .desc {
+    
+    border-color: #0A3365;
+ 
+    background: rgba(0, 0, 0, 0.116);
+    max-width: 350px;
+    padding: 1rem;
+    border-radius: 6px;
+  
+    margin-left: 93.5rem;
+    text-align: left;
+
+  
+  }
+  
+  .desc h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .desc p {
+    color: #c9c6c6;
+    margin: 0.5rem 0 1rem;
+    font-size: 0.95rem;
+    line-height: 1.5rem;
+  }
+  
+  .desc a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .desc a:hover {
+    text-decoration: underline;
+  }
+  
+
