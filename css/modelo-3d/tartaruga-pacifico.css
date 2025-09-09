@@ -130,6 +130,7 @@ body{
 .biologia{
     display: flex;
     margin: 18.438rem 3.75rem 5.625rem;
+    justify-content: center;
     gap: 2.313rem;
     .texto{
         max-width: 33.625rem;
