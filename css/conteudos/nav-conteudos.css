@@ -24,9 +24,12 @@ body{
     text-align: center;
     text-shadow: 3px 3px 8px #0a3365;
   }
-  
  
+  
   .cards {
+    background-color: rgba(0, 0, 0, 0.171);
+   /* filter: blur(5px);*/
+    
     margin-top: 5rem;
     display: flex;
     flex-direction: row;
@@ -44,6 +47,7 @@ body{
   
   .cards .siema div {
     position: relative;
+
    
   }
   
@@ -74,6 +78,19 @@ body{
   }
   
 
+.botão-pass {
+
+  align-items: flex-end;
+
+
+}
+
+
+
+
+
+
+
   .prev, .next {
    
     
@@ -83,12 +100,12 @@ body{
     background: #A2CFF8;
     color: white;
     font-size: 1.5rem;
-    margin: 2rem 1.5rem;
+    margin: 2rem 1.9rem;
     padding: 1.5rem 1rem;
     border-radius: 4px;
     cursor: pointer;
     transition: 0.3s;
-    margin-left: 87.5rem;
+    margin-left: 98.5rem;
   }
   
   .prev:hover, .next:hover {

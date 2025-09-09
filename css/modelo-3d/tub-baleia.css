@@ -4,7 +4,7 @@ body{
     background: linear-gradient(180deg, #000923 75.48%, #000000 96%);
     color: var(--branco);
     .inicio{
-        background: url("/assets/modelo 3d/cavalo-marinho/bg-cavalo.svg") no-repeat;
+        background: url("/assets/modelo 3d/palhaco/bg-palhaco.svg") no-repeat;
         background-size: cover;
         .capa{
             height: 100vh;
@@ -71,51 +71,40 @@ body{
 
 .nasc{
     text-align: center;
-    p{
-        margin: 1rem auto 3.75rem;
-        max-width: 54.125rem;
+    img{
+        margin: 1.875rem 0 0;
+        width: 100vw;
     }
-    .processos{
+    #blur-nasc{
+        box-shadow: 0 1rem 10rem 16rem #000923;
+        margin-bottom: 6.75rem;
+        position: relative;
+    }
+    .passos{
         display: flex;
-        justify-content: center;
-        gap: 1.438rem;
-        margin-bottom: 7.938rem;
-        p{
-            max-width: 18.813rem;
-        }
-        img{
-            margin: 0 0 2.5rem 0;
-            width: 100%;
-        }
-        h4{
-            margin-bottom: 1.688rem;
-        }
-        .claro{
-            background: #0066CC;
-            height: 47.125rem;
-            width: 23.313rem;
-        }
-        .escuro{
-            background: var(--azul-escuro);
-            height: 47.125rem;
-            width: 23.313rem;
+        gap: 5.625rem;
+        margin-inline: 5.5rem;
+        margin-bottom: 14.063rem;
+        position: relative;
+        h2{
+            margin-bottom: 3.375rem;
         }
     }
 }
 
-.tamanho{
+.tipos{
     text-align: center;
-    margin: auto;
-    max-width: 61.25rem;
-    img{
-        margin: 3.438rem 0 4.063rem;
+    .imagens{
+        margin: 2.313rem 0 12.313rem;
+        justify-content: center;
+        display: flex;
+        gap: 11.25rem;
     }
 }
 
 .biologia{
     display: flex;
     gap: 3rem;
-    margin-top: 14.313rem;
     margin-inline: 3.688rem;
     justify-content: center;
     align-items: center;
