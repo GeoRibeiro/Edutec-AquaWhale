@@ -113,7 +113,7 @@ h4 {
     border: 0.125rem solid var(--branco);
     border-radius: 0.813rem; /*arredonda a as bordas do quadrado*/
     /* x e altura e y a largura*/
-    font-size: 16px; /*definir o tamanho de uma fonte*/
+    font-size: 1rem; /*definir o tamanho de uma fonte*/
     cursor: pointer; /*coloca a mãozinha quando passa em cima do botão*/
     height: 4.188rem;/*sjusta automaticamente a altura*/
     width: 16.688rem;
@@ -121,6 +121,14 @@ h4 {
     font-family: "Poppins", serif;
     font-weight: bold;
    /* backdrop-filter: blur(10rem); BLUR NO FUNDO PODE SER UTIL PRA SASA*/
+}
+
+.botao button:hover{
+    cursor: pointer;
+    transition: .3s;
+    transform: scale(1.05);
+    border-color: var(--azul-claro);
+    box-shadow: 0 0 0.625rem var(--azul-highlight), 0 0 1.25rem #fff;
 }
 
 .pag2{
@@ -251,6 +259,12 @@ h4 {
             cursor: pointer;
             padding: 0.75rem 1.875rem;
             text-transform: uppercase;/**/
+        }
+        button:hover{
+            background: var(--azul-escuro);
+            cursor: pointer;
+            transition: .5s;
+            transform: scale(1.05);
         }
     }
     .cards:hover {

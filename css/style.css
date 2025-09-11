@@ -356,6 +356,7 @@ isso já ocorreu......*/
     .section-nos{
         display: flex;
         margin-top: 3.75rem;
+        gap: 2.5rem;
         justify-content: center;
         section{
             border: 1px solid var(--azul-claro);

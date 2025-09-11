@@ -119,6 +119,15 @@ h4 {
     font-weight: bold;
    /* backdrop-filter: blur(10rem); BLUR NO FUNDO PODE SER UTIL PRA SASA*/
 }
+
+.botao button:hover{
+    cursor: pointer;
+    transition: .3s;
+    transform: scale(1.05);
+    border-color: var(--azul-claro);
+    box-shadow: 0 0 0.625rem var(--azul-highlight), 0 0 1.25rem #fff;
+}
+
 .pag2{
     margin: 11rem 0 6.313rem;
     display: grid;/*divide em em uma familia com filho e mãe podendo organização em linhas*/
@@ -256,43 +265,14 @@ h4 {
             padding: 0.75rem 1.875rem;
             text-transform: uppercase;/**/
         }
+        button:hover{
+            background: var(--azul-escuro);
+            cursor: pointer;
+            transition: .5s;
+            transform: scale(1.05);
+        }
     }
     .cards:hover { /*quando o mouse passar por cima do card ele vai aumentar e fazer sombra*/
-        transform: translateY(-5px);
-        box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
-    } 
-}
-
-.ult-card{
-    text-align: center;/*Alinha o Texto no centro ????????????????*/
-    margin: 0 auto 6.063rem;
-    justify-content: center;
-    background: #D9D9D9;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    height: 10rem;
-    width: 30rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;/*especifica que as animações de alteração das propriedades transform e box-shadow devem ter uma duração de 0,3 segundos e um comportamento de "ease" (suave), criando um efeito de transição fluida em vez de um salto instantâneo entre estados. */
-    h4{
-        color: #0066CC;
-        margin: 0.813rem 0 0.813rem;
-    }
-    p{
-        color: var(--azul-quase-preto); 
-        margin-bottom: 0.563rem;
-    }
-    button {
-        background: #1091FA;
-        color: var(--branco);
-        border: none;/*SOMEEEEEEEEEEEEE CRL DE BORDA*/
-        border-radius: 0.75rem;
-        font-weight: 600;
-        font-size: 0.85rem;
-        cursor: pointer;
-        padding: 0.75rem 1.875rem;
-        text-transform: uppercase;/**/
-    }
-    .ult-card:hover { /*quando o mouse passar por cima do card ele vai aumentar e fazer sombra*/
         transform: translateY(-5px);
         box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
     } 

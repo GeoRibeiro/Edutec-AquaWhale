@@ -6,28 +6,6 @@ body {
     background: url('/assets/Quiz/bg-oceano.svg') no-repeat center center/cover;
 }
 
-.main-nav {
-    height: 4.938rem;
-    display: flex;
-    align-items: center;
-    padding-left: 2.375rem;
-
-    justify-content: space-between;
-    
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 2.375rem;
-}
-
-.nav-links a {
-    text-decoration: none;
-    padding: 2.375rem 0;
-}
-
 /* Estilo da seção de título */
 .hero-section {
     padding: 2rem 0 1rem;

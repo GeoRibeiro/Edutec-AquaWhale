@@ -15,8 +15,6 @@ body{
 
 
 
-
-
   main h2, .titulo-conteudos {
     margin: 2rem 0;
     font-size: 2.8rem;
@@ -32,7 +30,6 @@ body{
     
     margin-top: 5rem;
     display: flex;
-    flex-direction: row;
     align-items: flex-start;
     justify-content: center;
     gap: 1rem;
@@ -45,14 +42,8 @@ body{
     gap: 1rem;
   }
   
-  .cards .siema div {
-    position: relative;
-
-   
-  }
   
   .cards img {
-    position: relative;
     display: block;
     margin: 0 auto; 
     width: 260px;
@@ -86,11 +77,6 @@ body{
 }
 
 
-
-
-
-
-
   .prev, .next {
    
     
@@ -115,18 +101,14 @@ body{
   
   
   .desc {
-    
     border-color: #0A3365;
  
     background: rgba(0, 0, 0, 0.116);
     max-width: 350px;
     padding: 1rem;
     border-radius: 6px;
-  
     margin-left: 93.5rem;
-    text-align: left;
-
-  
+    text-align: left; 
   }
   
   .desc h4 {

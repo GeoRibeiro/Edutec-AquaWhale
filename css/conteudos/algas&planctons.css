@@ -119,6 +119,15 @@ h4 {
     font-weight: bold;
    /* backdrop-filter: blur(10rem); BLUR NO FUNDO PODE SER UTIL PRA SASA*/
 }
+
+.botao button:hover{
+    cursor: pointer;
+    transition: .3s;
+    transform: scale(1.05);
+    border-color: var(--azul-claro);
+    box-shadow: 0 0 0.625rem var(--azul-highlight), 0 0 1.25rem #fff;
+}
+
 .pag2{
     margin: 11rem 0 6.313rem;
     display: grid;/*divide em em uma familia com filho e mãe podendo organização em linhas*/
@@ -256,6 +265,12 @@ h4 {
             padding: 0.75rem 1.875rem;
             text-transform: uppercase;/**/
         }
+        button:hover{
+            background: var(--azul-escuro);
+            cursor: pointer;
+            transition: .5s;
+            transform: scale(1.05);
+        }
     }
     .cards:hover { /*quando o mouse passar por cima do card ele vai aumentar e fazer sombra*/
         transform: translateY(-5px);
@@ -291,6 +306,12 @@ h4 {
         cursor: pointer;
         padding: 0.75rem 1.875rem;
         text-transform: uppercase;/**/
+    }
+    button:hover{
+        background: var(--azul-escuro);
+        cursor: pointer;
+        transition: .5s;
+        transform: scale(1.05);
     }
 }
 
